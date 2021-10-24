@@ -40,10 +40,23 @@ public class Program
 					bool ProductoEncontrado = false;
 					for (int i = 0; i <Productos.Length; i++)
 					{
-						ProductoEncontrado = true;
-						Console.WriteLine("El producto " + Productos[i] + " Tiene un valor de: " + Precios[i]);
+						if(Productos[i].Equals(Item))
+						{
+							ProductoEncontrado = true;
+							Console.WriteLine("El producto " + Productos[i] + " Tiene un valor de: " + Precios[i]);
+							
+						}
+						else if (!ProductoEncontrado)
+						{
+							ProductoEncontrado = false;
+						} 
+						
 					}
 					
+					if(!ProductoEncontrado)
+					{
+						Console.WriteLine("El producto que ingreso no existe");
+					}
 					
 				break;
 
