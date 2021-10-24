@@ -35,6 +35,16 @@ public class Program
 			{
 				case 1://Buscar Producto
 					
+					Console.WriteLine("Ingrese el nombre del producto");
+					string Item = Console.ReadLine();
+					bool ProductoEncontrado = false;
+					for (int i = 0; i <Productos.Length; i++)
+					{
+						ProductoEncontrado = true;
+						Console.WriteLine("El producto " + Productos[i] + " Tiene un valor de: " + Precios[i]);
+					}
+					
+					
 				break;
 
 				case 2://Suma Rapida de Productos
@@ -73,8 +83,8 @@ public class Program
 				break;
 			}
 		}
-	}
-}
+	
+
 	}
   
   }
