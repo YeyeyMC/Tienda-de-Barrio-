@@ -129,7 +129,8 @@ public class Program
 				break;
 
 				case 9://Salir
-					
+					Console.WriteLine("Muchas Gracias por usar el programa :D");
+					Ejecucion = false;
 				break;
 
 				default: 
