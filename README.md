@@ -110,7 +110,12 @@ public class Program
 				
 				break;
 				case 6:// Informe de ventas
-					
+				
+						for (int l = 0; l < CarritoPrecios.Length;l++)
+					{
+						Console.WriteLine(CarritoProductos[l] + " Tiene un precio de: " + CarritoPrecios[l]);
+					}
+
 				break;
 				
 				case 7:
