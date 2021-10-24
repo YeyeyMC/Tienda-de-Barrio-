@@ -61,7 +61,22 @@ public class Program
 				break;
 
 				case 2://Suma Rapida de Productos
+				
+					Console.WriteLine("Cuantos Productos desea Levar?");
+					string R1 = Console.ReadLine();
+					for (int i = 0; i < int.Parse(R1); i++)
+					{
+						Console.WriteLine("Ingrese el nombre del producto");
+						string Item2 = Console.ReadLine();
+							for (int j = 0; j <Productos.Length; j++)
+							{
+									ProductoEncontrado2 = true;
+									Console.WriteLine("El producto " + Productos[j] + " Tiene un valor de: " + Precios[j]);
+									TTotal += Precios[j];
+					}
 					
+					Console.WriteLine("La suma es de: " + TTotal);
+					Total += TTotal;
 				break;
 						
 				case 3: // Pagar cuenta
