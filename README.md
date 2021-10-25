@@ -189,6 +189,10 @@ public class Program
 
 				case 5: // Actualizar cuenta cliente
 				
+					Console.WriteLine("Ingrese su ID");
+					string ID2 = Console.ReadLine();
+					for (int i = 0; i<CuentasClientes.Length; i++)
+				
 				break;
 				case 6:// Informe de ventas
 				
