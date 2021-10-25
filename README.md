@@ -144,6 +144,34 @@ public class Program
 					Console.WriteLine("2. No");
 					string Cuenta = Console.ReadLine();
 					
+					if(int.Parse(Cuenta) == 1)
+					{
+						Console.WriteLine("Ingrese su ID");
+						string ID = Console.ReadLine();
+						for (int i = 0; i<CuentasClientes.Length; i++)
+						{
+							if(CuentasClientes[i] == uint.Parse(ID))
+							{
+								Console.WriteLine("La Cuenta: " + CuentasClientes[i] + " tiene un saldo de " + EstadoDeCuenta[i]);
+							
+								if(EstadoDeCuenta[i] < 0)
+								{
+									Console.WriteLine("Usted esta en deuda");
+								}
+							
+								if(EstadoDeCuenta[i] == 0)
+								{
+									Console.WriteLine("Usted esta en paz y salvo");
+								}
+							
+								if(EstadoDeCuenta[i] > 0)
+								{
+									Console.WriteLine("Usted ested tiene plata");
+								}
+							}
+						}
+					}
+					
 				break;
 
 				case 5: // Actualizar cuenta cliente
