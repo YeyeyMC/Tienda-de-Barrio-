@@ -138,6 +138,11 @@ public class Program
 				break;
 
 				case 4: // consultar cuenta client
+				
+					Console.WriteLine("¿Usted ya tiene cuenta?");
+					Console.WriteLine("1. Si");
+					Console.WriteLine("2. No");
+					string Cuenta = Console.ReadLine();
 					
 				break;
 
