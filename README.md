@@ -213,6 +213,8 @@ public class Program
 				break;
 				
 				case 7:
+					Console.WriteLine("Ingrese su ID");
+					string ID3 = Console.ReadLine();
 				
 				break;
 
