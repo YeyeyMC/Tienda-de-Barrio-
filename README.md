@@ -241,9 +241,10 @@ public class Program
 
 				break;
 
-				case 9://Salir
-					Console.WriteLine("Muchas Gracias por usar el programa :D");
-					Ejecucion = false;
+				case 9://Creditos
+					
+					Console.WriteLine("Estudiantes de Ingenieria en Diseno de Entretenimiento Digital");
+					Console.WriteLine("");
 				break;
 
 				default: 
