@@ -202,13 +202,8 @@ public class Program
 				
 				break;
 				case 6:// Informe de ventas
-				
-					Console.WriteLine("Usted a Comprado: ");
+						Console.WriteLine("Usted a Comprado: ");
 						for (int l = 0; l < CarritoPrecios.Length;l++)
-					{
-						Console.WriteLine(CarritoProductos[l] + " Tiene un precio de: " + CarritoPrecios[l]);
-					}
-						Console.WriteLine("La suma es de: " +Total);
 
 				break;
 				
