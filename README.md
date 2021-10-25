@@ -120,6 +120,15 @@ public class Program
 					Console.WriteLine("2. Fiar");
 					string R = Console.ReadLine();
 					
+					if(int.Parse(R) == 1)
+					{
+						Console.WriteLine("¿Con cuanto va a pagar?");
+						string Plata = Console.ReadLine();
+						
+						int Devuelta = int.Parse(Plata) - Total;
+						Console.WriteLine("Su devuelta es de: " + Devuelta);
+					}
+					
 						
 				break;
 
