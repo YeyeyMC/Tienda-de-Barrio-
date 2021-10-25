@@ -172,6 +172,19 @@ public class Program
 						}
 					}
 					
+					if(int.Parse(Cuenta) == 2)
+					{
+						
+						Console.WriteLine("Ingrese su ID");
+						string IDNuevo = Console.ReadLine();
+						
+						Array.Resize<uint>(ref CuentasClientes, CuentasClientes.Length + 1  );
+						Array.Resize<int>(ref EstadoDeCuenta, EstadoDeCuenta.Length + 1 );
+						CuentasClientes[CuentasClientes.Length -1] = uint.Parse(IDNuevo);
+						EstadoDeCuenta[ EstadoDeCuenta.Length -1] = 0;
+						Console.WriteLine("Se Creo una nueva cuenta :D");
+					}
+					
 				break;
 
 				case 5: // Actualizar cuenta cliente
