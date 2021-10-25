@@ -129,6 +129,11 @@ public class Program
 						Console.WriteLine("Su devuelta es de: " + Devuelta);
 					}
 					
+					if(int.Parse(R) == 2)
+					{
+						Deuda = Total;
+					}
+					
 						
 				break;
 
