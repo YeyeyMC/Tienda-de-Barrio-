@@ -15,7 +15,7 @@ public class Program
 		int [] EstadoDeCuenta = {0,0,0,0};
 		int Deuda = 0;
 		
-		Console.WriteLine(" La tienda de Don Lucho");
+		Console.WriteLine("La Tienda del Barrio de don Lucho");
 		Console.WriteLine();
 		Console.WriteLine("opciones");
 		Console.WriteLine();
