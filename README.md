@@ -245,7 +245,7 @@ public class Program
 					
 					Console.WriteLine("Estudiantes de Ingenieria en Diseno de Entretenimiento Digital");
 					Console.WriteLine("");
-					Console.WriteLine("Fundamentos de Programacon");
+					Console.WriteLine("Fundamentos de Programacion");
 					Console.WriteLine("");
 					Console.WriteLine("Pablo Velez Mesa");
 					Console.WriteLine("Juan Sebastian Giraldo Mosquera");
