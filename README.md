@@ -4,7 +4,18 @@ public class Program
 {
 	public static void Main()
 	{
-		Console.WriteLine("Nombre de la tienda");
+		bool Ejecucion = true;
+		string [] Productos = {"Arepas", "Azucar", "Pan", "Jamon", "Leche", "Tortillas", "Queso", "Panela", "Chocolate", "Jabon"};
+		int [] Precios = {2000,3000,2500,4500,3000,3500,1500,500,5000,6000};;
+		int Total = 0;
+		int [] CarritoPrecios = new int [0];
+		string [] CarritoProductos = new string [0];
+		int NProductos = 0;
+		uint [] CuentasClientes = {1523648972,1423657890,1243598762,1253686547};
+		int [] EstadoDeCuenta = {0,0,0,0};
+		int Deuda = 0;
+		
+		Console.WriteLine(" La tienda de Don Lucho");
 		Console.WriteLine();
 		Console.WriteLine("opciones");
 		Console.WriteLine();
@@ -22,9 +33,11 @@ public class Program
 		Console.WriteLine();
 		Console.WriteLine("7. Calcular Cartera del Cliente");
 		Console.WriteLine();
-		Console.WriteLine("8. Cuentas por Pagar");
+		Console.WriteLine("8. Salir");
 		Console.WriteLine();
-		Console.WriteLine("9. Salir");
+		Console.WriteLine("9. Creditos");
+		Console.WriteLine();
+
 		while(Ejecucion)
 		{
 			Console.WriteLine();
@@ -61,7 +74,8 @@ public class Program
 				break;
 
 				case 2://Suma Rapida de Productos
-				Console.WriteLine("Cuantos Productos desea Levar?");
+					
+					Console.WriteLine("Cuantos Productos desea Levar?");
 					string R1 = Console.ReadLine();
 					Array.Resize<int>(ref CarritoPrecios, CarritoPrecios.Length + int.Parse(R1));
 					Array.Resize<string>(ref CarritoProductos, CarritoProductos.Length + int.Parse(R1));
@@ -77,7 +91,7 @@ public class Program
 								{
 									ProductoEncontrado2 = true;
 										Console.WriteLine("El producto " + Productos[j] + " Tiene un valor de: " + Precios[j]);
-										TTotal += Precios[j];
+										TTotal += Precios[j];	
 										CarritoPrecios[NProductos] = Precios[j];
 										CarritoProductos[NProductos] = Productos[j];
 									NProductos ++;
@@ -99,6 +113,13 @@ public class Program
 				break;
 						
 				case 3: // Pagar cuenta
+					
+					Console.WriteLine("La Cuenta tiene un valor de: " + Total);
+					Console.WriteLine("Porfavor eleja un metodo de pago");
+					Console.WriteLine("1. Pago en efectivo");
+					Console.WriteLine("2. Fiar");
+					string R = Console.ReadLine();
+					
 						
 				break;
 
