@@ -215,6 +215,23 @@ public class Program
 				case 7:
 					Console.WriteLine("Ingrese su ID");
 					string ID3 = Console.ReadLine();
+					for (int i = 0; i<CuentasClientes.Length; i++)
+					{
+						if(CuentasClientes[i] == uint.Parse(ID3))
+						{
+							
+							if(EstadoDeCuenta[i] < 0)
+							{
+								Console.WriteLine("Usted esta en deuda por la cantidad de: " + EstadoDeCuenta[i]);
+							}
+							
+							if(EstadoDeCuenta[i] == 0)
+							{
+								Console.WriteLine("Usted esta en paz y salvo");
+							}
+							
+						}
+					}
 				
 				break;
 
