@@ -192,6 +192,9 @@ public class Program
 					Console.WriteLine("Ingrese su ID");
 					string ID2 = Console.ReadLine();
 					for (int i = 0; i<CuentasClientes.Length; i++)
+					{
+						if(CuentasClientes[i] == uint.Parse(ID2))
+						{	
 				
 				break;
 				case 6:// Informe de ventas
