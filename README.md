@@ -195,6 +195,10 @@ public class Program
 					{
 						if(CuentasClientes[i] == uint.Parse(ID2))
 						{	
+							EstadoDeCuenta[i] = -Deuda; 
+							Console.WriteLine("La Cuenta: " + CuentasClientes[i] + " tiene un saldo de " + EstadoDeCuenta[i]);
+						}
+					}
 				
 				break;
 				case 6:// Informe de ventas
